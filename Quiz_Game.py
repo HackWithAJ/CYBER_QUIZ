@@ -4,19 +4,23 @@ Playing = input("Do you wanna play(yes/no) = ")
 if Playing.lower() != "yes":
     quit()
 
-print( "              ______   ______  _____ ____      ___  _   _ ___ _____ ")
-print("             / ___\ \ / / __ )| ____|  _ \    / _ \| | | |_ _|__  /  ")
-print("            | |    \ V /|  _ \|  _| | |_) |  | | | | | | || |  / /   ")
-print("            | |___  | | | |_) | |___|  _ <   | |_| | |_| || | / /_   ")
-print("             \____| |_| |____/|_____|_| \_\___\__\_\\___/|___/____|  ")
-print("                                         |_____|                                  ")
-print("                                                                  By Ashish Jaiswal     ")
+CYAN    = '\033[36m'
+WHITE   = '\033[37m'
+YELLOW  = '\033[33m'
+
+print(CYAN + "              ______   ______  _____ ____      ___  _   _ ___ _____ ")
+print(CYAN + "             / ___\ \ / / __ )| ____|  _ \    / _ \| | | |_ _|__  /  ")
+print(CYAN + "            | |    \ V /|  _ \|  _| | |_) |  | | | | | | || |  / /   ")
+print(CYAN + "            | |___  | | | |_) | |___|  _ <   | |_| | |_| || | / /_   ")
+print(CYAN + "             \____| |_| |____/|_____|_| \_\___\__\_\\___/|___/____|  ")
+print(CYAN + "                                         |_____|                                  ")
+print(CYAN + "                                                                  By Ashish Jaiswal     ")
 print("")                
-print("Okay!! Let's Begin, Goodluck!!")
+print(YELLOW + "Okay!! Let's Begin, Goodluck!!")
 score = 0
 print("")
 #1
-Answer = input("What is full form of BIOS? ")
+Answer = input(WHITE + "What is full form of BIOS? ")
 if Answer.lower() == "basic input output system":
     print("Correct!")
     score += 1
@@ -166,7 +170,7 @@ if Answer.lower() == "address resolution protocol":
     print("Correct!")
     score += 1
 
-print("You got " + str(score) + " questions correct!")
+print(YELLOW + "You got " + str(score) + " questions correct!")
 print("You scored " + str((score / 30) * 100) + " %")
 
 if score >= 28:
@@ -176,8 +180,9 @@ elif score >= 20:
 elif score <= 18:
     print("Not enough! You need more practise!")
 
-Review = input("Have you enjoyed the cyber quiz? ")
+Review = input(CYAN +"Have you enjoyed the cyber quiz? ")
+
 if Review.lower() == "yes":
-    print("ThankYou!! It means alot!! Have a nice day!! for more queries catch me at instagram - a.j__ftw ")
+    print(CYAN + "ThankYou!! It means alot!! Have a nice day!! for more queries catch me at instagram - a.j__ftw ")
 else:
-    print("sorry to disappoint you, for more queries catch me at instagram - a.j__ftw ")
+    print(CYAN + "sorry to disappoint you, for more queries catch me at instagram - a.j__ftw ")
