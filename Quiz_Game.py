@@ -14,7 +14,7 @@ print(CYAN + "            | |    \ V /|  _ \|  _| | |_) |  | | | | | | || |  / /
 print(CYAN + "            | |___  | | | |_) | |___|  _ <   | |_| | |_| || | / /_   ")
 print(CYAN + "             \____| |_| |____/|_____|_| \_\___\__\_\\___/|___/____|  ")
 print(CYAN + "                                         |_____|                                  ")
-print(CYAN + "                                                                  By Ashish Jaiswal     ")
+print(CYAN + "                                                                  By HackWithAJ     ")
 print("")                
 print(YELLOW + "Okay!! Let's Begin, Goodluck!!")
 score = 0
